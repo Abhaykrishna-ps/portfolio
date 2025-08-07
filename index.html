@@ -11,14 +11,20 @@
 
   <!-- Header Section -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">My Portfolio</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <nav>
+  <h1>My Portfolio</h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links" class="nav-links">
+    <li><a href="#index.html">Home</a></li>
+    <li><a href="#project.html">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 
     <div class="intro">
       <img src="achu.jpg" alt="My Profile Photo" class="profile-pic" />
@@ -44,6 +50,14 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:abhaykrishna177@gmail.com">abhaykrishna177@gmail.com</a></p>
   </section>
+
+  <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
 
 </body>
 </html>
