@@ -1,63 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Abhaykrishna P S — Portfolio</title>
+
+  <meta
+    name="description"
+    content="Embedded Systems, IoT, Robotics and AI Portfolio"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <nav>
-  <h1>My Portfolio</h1>
+  <!-- LOADER -->
 
-  <!-- Hamburger Icon -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div id="loader">
+    <h1>ABK</h1>
+  </div>
 
-  <!-- Navigation Links -->
-  <ul id="nav-links" class="nav-links">
-    <li><a href="#index.html">Home</a></li>
-    <li><a href="#project.html">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- BACKGROUND -->
 
+  <div class="grid-bg"></div>
 
-    <div class="intro">
-      <img src="achu.jpg" alt="My Profile Photo" class="profile-pic" />
-      <h2>Hi, I'm Abhaykrishna P S</h2>
-      <p>Student of FISAT</p>
+  <div class="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="nav-logo">
+      ABK
     </div>
-  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate student at FISAT, exploring web development and looking to build amazing digital experiences.</p>
+    <div class="nav-links">
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#education">Education</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="#experience">Experience</a>
+
+      <a href="#certifications">Certifications</a>
+
+      <a href="#achievements">Achievements</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
+    <div class="menu-btn">
+      ☰
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="hero">
+
+    <div class="hero-tag">
+      Electronics & Communication Student
+    </div>
+
+    <h1 class="hero-name">
+      Abhay<span>krishna</span><br>
+      P S
+    </h1>
+
+    <p class="hero-title">
+      Building intelligent systems at the edge
+    </p>
+
+    <p class="hero-desc">
+      Final-year Electronics and Communication Engineering student
+      specializing in Embedded Systems, IoT, Robotics and AI-based automation.
+    </p>
+
+    <div class="hero-cta">
+
+      <a href="#projects" class="btn btn-primary">
+        View Projects
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Contact Me
+      </a>
+
+      <a href="resume.pdf" download class="btn btn-outline">
+        Download Resume
+      </a>
+
+    </div>
+
+    <div class="hero-socials">
+
+      <a
+        href="https://linkedin.com/in/abhaykrishnaps"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/Abhaykrishna-ps"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+    </div>
+
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <a href="project.html" class="btn">View Projects</a>
+  <!-- ABOUT -->
+
+  <section id="about" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 01
+      </span>
+
+      <h2 class="section-title">
+        About
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p>
+          I'm a final-year B.Tech student in Electronics &
+          Communication Engineering at APJ Abdul Kalam
+          Technological University, Thrissur, Kerala.
+        </p>
+
+        <p>
+          My work focuses on Embedded Systems, IoT,
+          Robotics, Computer Vision and AI automation.
+        </p>
+
+        <p>
+          I enjoy building intelligent edge systems that
+          solve real-world problems through hardware-software integration.
+        </p>
+
+      </div>
+
+      <div class="about-stats">
+
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Major Projects</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-num">7.4</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-num">2027</div>
+          <div class="stat-label">Graduation</div>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:abhaykrishna177@gmail.com">abhaykrishna177@gmail.com</a></p>
+  <!-- SKILLS -->
+
+  <section id="skills" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 02
+      </span>
+
+      <h2 class="section-title">
+        Skills
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+
+        <div class="skill-group-name">
+          Languages
+        </div>
+
+        <div class="skill-tags">
+
+          <span class="skill-tag accent">
+            Python
+          </span>
+
+          <span class="skill-tag accent">
+            C
+          </span>
+
+          <span class="skill-tag">
+            Embedded C
+          </span>
+
+          <span class="skill-tag">
+            Verilog HDL
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="skill-group">
+
+        <div class="skill-group-name">
+          Platforms & Hardware
+        </div>
+
+        <div class="skill-tags">
+
+          <span class="skill-tag accent">
+            Raspberry Pi 5
+          </span>
+
+          <span class="skill-tag accent">
+            ESP32
+          </span>
+
+          <span class="skill-tag">
+            Arduino UNO
+          </span>
+
+          <span class="skill-tag">
+            FPGA
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="skill-group">
+
+        <div class="skill-group-name">
+          Tools & Software
+        </div>
+
+        <div class="skill-tags">
+
+          <span class="skill-tag accent">
+            OpenCV
+          </span>
+
+          <span class="skill-tag">
+            MATLAB
+          </span>
+
+          <span class="skill-tag">
+            VS Code
+          </span>
+
+          <span class="skill-tag">
+            Git
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("active");
-  }
-</script>
+  <!-- EDUCATION -->
 
+  <section id="education" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 03
+      </span>
+
+      <h2 class="section-title">
+        Education
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="exp-list">
+
+      <div class="exp-item">
+
+        <div class="exp-meta">
+
+          <div class="exp-period">
+            2023 – 2027
+          </div>
+
+          <div class="exp-org">
+            APJ Abdul Kalam Technological University
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3 class="exp-role">
+            B.Tech — Electronics & Communication Engineering
+          </h3>
+
+          <ul class="exp-points">
+            <li>Current CGPA: 7.4</li>
+            <li>Expected Graduation: 2027</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 04
+      </span>
+
+      <h2 class="section-title">
+        Projects
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="projects-list">
+
+      <div class="project-card">
+
+        <div class="project-top">
+
+          <h3 class="project-name">
+            Autonomous Security RoboCop
+          </h3>
+
+          <span class="project-year">
+            2025 – 2026
+          </span>
+
+        </div>
+
+        <p class="project-desc">
+          AI-driven surveillance robot for metro station security.
+        </p>
+
+        <ul class="project-highlights">
+
+          <li>
+            OpenCV-based yellow-line crossing detection
+          </li>
+
+          <li>
+            ESP32 + Raspberry Pi integration
+          </li>
+
+          <li>
+            MQTT wireless telemetry
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="project-top">
+
+          <h3 class="project-name">
+            Emergency Tracking & Alert System
+          </h3>
+
+          <span class="project-year">
+            2025
+          </span>
+
+        </div>
+
+        <p class="project-desc">
+          IoT women safety system with GPS and GSM tracking.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+
+  <section id="experience" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 05
+      </span>
+
+      <h2 class="section-title">
+        Experience
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3 class="project-name">
+        Embedded Systems Training — Techmaghi
+      </h3>
+
+      <p class="project-desc">
+        Worked on Arduino programming, sensor interfacing,
+        and communication protocols.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+
+  <section id="certifications" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 06
+      </span>
+
+      <h2 class="section-title">
+        Certifications
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="projects-list">
+
+      <div class="project-card">
+        <h3 class="project-name">
+          C-Based VLSI Design
+        </h3>
+
+        <p class="project-desc">
+          NPTEL — IIT Guwahati
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-name">
+          Machine Learning
+        </h3>
+
+        <p class="project-desc">
+          Intel Unnati — Intel & EdGate
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+
+  <section id="achievements" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 07
+      </span>
+
+      <h2 class="section-title">
+        Achievements
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3 class="project-name">
+        IEEE Xtreme 18.0
+      </h3>
+
+      <p class="project-desc">
+        Participated in IEEE global programming competition.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="fade-in">
+
+    <div class="section-header">
+
+      <span class="section-num">
+        // 08
+      </span>
+
+      <h2 class="section-title">
+        Contact
+      </h2>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-text">
+
+        <p>
+          Open to internships, embedded systems projects,
+          robotics and AI collaborations.
+        </p>
+
+      </div>
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:abhaykrishnaps47@gmail.com"
+          class="contact-link"
+        >
+          Email
+        </a>
+
+        <a
+          href="https://linkedin.com/in/abhaykrishnaps"
+          target="_blank"
+          class="contact-link"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/Abhaykrishna-ps"
+          target="_blank"
+          class="contact-link"
+        >
+          GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    Designed & Built by Abhaykrishna P S
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
